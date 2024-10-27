@@ -9,9 +9,3 @@ This project aims to help users find unique dining experiences for smoked and gr
 ![ERD](https://github.com/user-attachments/assets/373ff8a7-6c0b-4e03-bbe1-894a20b67622)
 
 # Mockups
-
-#Data Models
-
-#User Stories
-
-#Pseudo code
