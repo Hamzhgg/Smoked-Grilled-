@@ -5,5 +5,5 @@ Concept: “Best Smoked and Grilled Meat Restaurants” is an interactive web ap
 This project aims to help users find unique dining experiences for smoked and grilled meats, making the search process more convenient and personalized.
 
 
-
+# ERD Diagram
 ![ERD](https://github.com/user-attachments/assets/373ff8a7-6c0b-4e03-bbe1-894a20b67622)
