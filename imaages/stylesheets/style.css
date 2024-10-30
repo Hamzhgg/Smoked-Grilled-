@@ -91,86 +91,68 @@ body {
   }
   
   .signup-page,
-.signin-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80%; /* Centers form container */
-  gap: 20px;
-  height: 80%;
-}
+  .signin-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Centers form container */
+    gap: 20px;
+    height: 80%;
+  }
+  
+  .signup-form-container-1,
+  .signin-form-container-1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .signup-form-container-2,
+  .signin-form-container-2 {
+    padding: 20px 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+  }
+  
+  .signup-form-container-2 > h1,
+  .signin-form-container-2 > h1 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+  label {
+    font-size: 0.9em;
+  }
+  
+  input,
+  button {
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  button {
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #2a0046;
+  }
+  
+  button:hover {
+    background-color: black;
+  }
+  
+  .signup-img,
+  .signin-img {
+    background-image: url('https://www.teka.com/global/wp-content/uploads/sites/3/2019/09/por-que-atemperar-la-carne.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 50vh;
+  }   
 
-.signup-form-container-1,
-.signin-form-container-1 {
-  display: flex;
-  align-items: center;
-}
-
-.signup-form-container-2,
-.signin-form-container-2 {
-  padding: 20px 40px;
-  border: 1px solid gray;
-  border-radius: 10px;
-}
-
-.signup-form-container-2 > h1,
-.signin-form-container-2 > h1 {
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-label {
-  font-size: 0.9em;
-}
-
-input {
-  border-radius: 10px;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-/* Updated button styles */
-button {
-  height: 50px;
-  margin: 5px;
-  width: 120px; /* You can adjust this width as needed */
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Consolas, Courier New, monospace;
-  border: solid #404c5d 1px;
-  font-size: 16px;
-  color: rgb(161, 161, 161);
-  transition: 500ms;
-  border-radius: 5px;
-  background: linear-gradient(145deg, #2e2d2d, #212121);
-  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
-    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
-}
-
-button:hover {
-  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
-  color: #d6d6d6;
-}
-
-button:active {
-  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
-}
-
-.signup-img,
-.signin-img {
-  background-image: url('https://www.teka.com/global/wp-content/uploads/sites/3/2019/09/por-que-atemperar-la-carne.jpg');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  min-height: 50vh;
-}
-
- 
   .index-header,
   .card-container,
   .new-container {
