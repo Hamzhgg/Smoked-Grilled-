@@ -1,189 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sixtyfour+Convergence&display=swap');
-
 body {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    background-color: #888888;
-  }
-  
-  .landing-header {
-    display: flex;
-    flex-direction: row;
-    height: 15%;
-    width: 80%; 
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  .logo-container > h1 {
-    margin: 0;
-    font-size: 1.4em;
-  }
-  
-  .restaurant-icon {
-    background-image: url('https://www.teka.com/global/wp-content/uploads/sites/3/2019/09/por-que-atemperar-la-carne.jpg');
-    width: 1.4em;
-    height: 1.4em;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 10px;
-  }
-  
-  .landing-image {
-    background-image: url('https://www.teka.com/global/wp-content/uploads/sites/3/2019/09/por-que-atemperar-la-carne.jpg');
-    height: 80vh;
-    width: 100vw;
-    background-size: cover;
-    background-position: center;
-    margin-top: 8px;
-  }
-  
-  .auth-links,
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    margin: 20px 0;
-  }
-  
-  .auth-links > a,
-  .nav-links > a {
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-  }
-  
-  .auth-links > a:first-child {
-    background-color: #080f3f;
-  }
-  
-  .auth-links > a:first-child:hover,
-  .auth-links > a:nth-child(2):hover {
-    background-color: black;
-    color: white;
-  }
-  
-  .auth-links > a:nth-child(2) {
-    background-color: #6f8dae;
-  }
-  
-  .nav-links > a {
-    font-weight: bold;
-    color: black;
-  }
-  
-  .nav-links > a:hover {
-    color: #6f8dae;
-    text-decoration: underline;
-  }
-  
-  .signup-page,
-  .signin-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%; /* Centers form container */
-    gap: 20px;
-    height: 80%;
-  }
-  
-  .signup-form-container-1,
-  .signin-form-container-1 {
-    display: flex;
-    align-items: center;
-  }
-  
-  .signup-form-container-2,
-  .signin-form-container-2 {
-    padding: 20px 40px;
-    border: 1px solid gray;
-    border-radius: 10px;
-  }
-  
-  .signup-form-container-2 > h1,
-  .signin-form-container-2 > h1 {
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    text-align: center;
-  }
-  
-  label {
-    font-size: 0.9em;
-  }
-  
-  input,
-  button {
-    border-radius: 10px;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-  }
-  
-  button {
-    border: none;
-    color: white;
-    font-weight: bold;
-    background-color: #2a0046;
-  }
-  
-  button:hover {
-    background-color: black;
-  }
-  
-  .signup-img,
-  .signin-img {
-    background-image: url('https://www.teka.com/global/wp-content/uploads/sites/3/2019/09/por-que-atemperar-la-carne.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 50vh;
-  }   
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: #f9f7f0;
+}
 
-  .index-header,
-  .card-container,
-  .new-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .card-container > a {
-    padding: 12px 25px;
-    border: 1px solid gray;
-    border-radius: 8px;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-  }
-  
-  .card-container > a:hover {
-    background-color: black;
-    color: white;
-  }
-  
-  .new-form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid gray;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-  }
-  
+.landing-header {
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+  width: 80%; /* Reduced width for centered alignment */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.logo-container > h1 {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+.house-icon {
+  background-image: url('https://osmeatshop.com/cdn/shop/articles/ATG4.png?v=1641294790');
+  width: 1.4em;
+  height: 1.4em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.landing-image {
+  background-image: url('https://osmeatshop.com/cdn/shop/articles/ATG4.png?v=1641294790');
+  height: 80vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  margin-top: 8px;
+}
+
+.auth-links,
+.nav-links {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.auth-links > a,
+.nav-links > a {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.auth-links > a:first-child {
+  background-color: #274c9c;
+}
+
+.auth-links > a:first-child:hover,
+.auth-links > a:nth-child(2):hover {
+  background-color: black;
+  color: white;
+}
+
+.auth-links > a:nth-child(2) {
+  background-color: #6f8dae;
+}
+
+.nav-links > a {
+  font-weight: bold;
+  color: black;
+}
+
+.nav-links > a:hover {
+  color: #6f8dae;
+  text-decoration: underline;
+}
+
+.signup-page,
+.signin-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%; /* Centers form container */
+  gap: 20px;
+  height: 80%;
+}
+
+.signup-form-container-1,
+.signin-form-container-1 {
+  display: flex;
+  align-items: center;
+}
+
+.signup-form-container-2,
+.signin-form-container-2 {
+  padding: 20px 40px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.signup-form-container-2 > h1,
+.signin-form-container-2 > h1 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+label {
+  font-size: 0.9em;
+}
+
+input,
+button {
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #274c9c;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.signup-img,
+.signin-img {
+  background-image: url('https://osmeatshop.com/cdn/shop/articles/ATG4.png?v=1641294790');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 50vh;
+}
+
+.index-header,
+.card-container,
+.new-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.card-container > a {
+  padding: 12px 25px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.card-container > a:hover {
+  background-color: black;
+  color: white;
+}
+
+.new-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+}
