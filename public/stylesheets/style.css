@@ -95,7 +95,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 80%; /* Centers form container */
     gap: 20px;
     height: 80%;
   }
@@ -125,46 +125,23 @@ body {
     font-size: 0.9em;
   }
   
-  input {
+  input,
+  button {
     border-radius: 10px;
     width: 100%;
     padding: 10px;
     margin: 10px 0;
   }
   
-  /* New Button Style from Uiverse.io */
-  .button {
-    min-width: 120px;
-    position: relative;
-    cursor: pointer;
-    padding: 12px 17px;
-    border: 0;
-    border-radius: 7px;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-    background: radial-gradient(ellipse at bottom, rgba(71, 81, 92, 1) 0%, rgba(11, 21, 30, 1) 45%);
-    color: rgba(255, 255, 255, 0.66);
-    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+  button {
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #2a0046;
   }
   
-  .button::before {
-    content: "";
-    width: 70%;
-    height: 1px;
-    position: absolute;
-    bottom: 0;
-    left: 15%;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
-    opacity: 0.2;
-    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
-  }
-  
-  .button:hover {
-    color: rgb(255, 255, 255, 1);
-    transform: scale(1.1) translateY(-3px);
-  }
-  
-  .button:hover::before {
-    opacity: 1;
+  button:hover {
+    background-color: black;
   }
   
   .signup-img,
@@ -174,7 +151,7 @@ body {
     background-position: center;
     width: 100%;
     min-height: 50vh;
-  }  
+  }
   
   .index-header,
   .card-container,
