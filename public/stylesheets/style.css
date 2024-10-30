@@ -67,7 +67,7 @@ body {
   }
   
   .auth-links > a:first-child {
-    background-color: #32083f;
+    background-color: #080f3f;
   }
   
   .auth-links > a:first-child:hover,
@@ -90,73 +90,72 @@ body {
     text-decoration: underline;
   }
   
-  .signup-page,
-  .signin-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%; /* Centers form container */
-    gap: 20px;
-    height: 80%;
-  }
-  
-  .signup-form-container-1,
-  .signin-form-container-1 {
-    display: flex;
-    align-items: center;
-  }
-  
-  .signup-form-container-2,
-  .signin-form-container-2 {
-    padding: 20px 40px;
-    border: 1px solid gray;
-    border-radius: 10px;
-  }
-  
-  .signup-form-container-2 > h1,
-  .signin-form-container-2 > h1 {
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    text-align: center;
-  }
-  
-  label {
-    font-size: 0.9em;
-  }
-  
-  input {
-    border-radius: 10px;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-  }
-  
-  /* New Button Style from Uiverse.io by ke1221 */
   button {
-    color: #090909;
-    padding: 0.7em 1.7em;
-    font-size: 18px;
-    border-radius: 0.5em;
-    background: #e8e8e8;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
     cursor: pointer;
-    border: 1px solid #e8e8e8;
-    transition: all 0.3s;
-    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
   }
   
-  button:active {
-    color: #666;
-    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  button {
+    --primary-color: #111;
+    --hovered-color: #c84747;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
   }
   
-  .signup-img,
-  .signin-img {
-    background-image: url('https://www.teka.com/global/wp-content/uploads/sites/3/2019/09/por-que-atemperar-la-carne.jpg');
-    background-size: cover;
-    background-position: center;
+  button p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color);
+  }
+  
+  button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  button p::before {
+    position: absolute;
+    content: "Sign Up"; /* Replace "Subscribe" with "Sign Up" */
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  button:hover::after {
     width: 100%;
-    min-height: 50vh;
+  }
+  
+  button:hover p::before {
+    width: 100%;
+  }
+  
+  button:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color);
+  }
+  
+  button svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
   }
   
   
