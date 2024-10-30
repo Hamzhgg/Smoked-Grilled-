@@ -81,9 +81,9 @@ router.get('/:restaurantId/edit', async (req, res) => {
 router.put('/:restaurantId', async (req, res) => {
   try {
     const currentRestaurant = await Restaurant.findById(req.params.restaurantId)
-    if (currentListing.owner.equals(req.session.user._id)) {
+    if (currentRestaurant.owner.equals(req.session.user._id)) {
       await currentRestaurant.updateOne(req.body)
-      res.redirect('/restaurants')
+      res.redirect(`/restaurants/${req.params.restaurantId}`)
     } else {
         res.send("You don't have permission to do that.")
     }
@@ -92,5 +92,6 @@ router.put('/:restaurantId', async (req, res) => {
     res.redirect('/')
   }
 })
+
 
 module.exports = router
