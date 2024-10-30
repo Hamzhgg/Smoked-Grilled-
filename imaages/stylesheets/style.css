@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700');
+
 body {
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -31,8 +33,8 @@ body {
   font-size: 1.4em;
 }
 
-.house-icon {
-  background-image: url('https://osmeatshop.com/cdn/shop/articles/ATG4.png?v=1641294790');
+.restaurant-icon {
+  background-image: url('https://www.teka.com/global/wp-content/uploads/sites/3/2019/09/por-que-atemperar-la-carne.jpg');
   width: 1.4em;
   height: 1.4em;
   background-repeat: no-repeat;
@@ -41,7 +43,7 @@ body {
 }
 
 .landing-image {
-  background-image: url('https://osmeatshop.com/cdn/shop/articles/ATG4.png?v=1641294790');
+  background-image: url('https://www.teka.com/global/wp-content/uploads/sites/3/2019/09/por-que-atemperar-la-carne.jpg');
   height: 80vh;
   width: 100vw;
   background-size: cover;
@@ -144,7 +146,7 @@ button:hover {
 
 .signup-img,
 .signin-img {
-  background-image: url('https://osmeatshop.com/cdn/shop/articles/ATG4.png?v=1641294790');
+  background-image: url('https://www.teka.com/global/wp-content/uploads/sites/3/2019/09/por-que-atemperar-la-carne.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
