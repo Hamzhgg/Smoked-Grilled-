@@ -11,7 +11,7 @@
     <%- include('../partials/_navbar.ejs') %>
 
     <!-- Restaurant Details -->
-    <h1>A Restaurant in <%= restaurant.address %></h1>
+    <h1>The restaurantname <%= restaurant.name %></h1>
     
     <h2>Restaurants Details</h2>
     <p>Address: <%= restaurant.address %></p>
@@ -31,7 +31,6 @@
       <p>You don't own this, <%= restaurant.owner.username %> does!</p>
     <% } %>
 
-    <!-- Favorites Section -->
     
   </body>
 </html>
