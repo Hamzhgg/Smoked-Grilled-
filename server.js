@@ -12,7 +12,7 @@ const path = require('path')
 const isSignedIn = require('./middleware/is-signed-in.js')
 const passUserToView = require('./middleware/pass-user-to-view.js')
 const authController = require('./controllers/auth.js')
-const listingsController = require('./controllers/listings.js')
+const restaurantsController = require('./controllers/restaurants.js')
 
 const port = process.env.PORT ? process.env.PORT : '3000'
 
@@ -43,16 +43,16 @@ app.get('/', (req, res) => {
   })
 })
 
-app.get('/vip-lounge', (req, res) => {
+app.get('/owner-area', (req, res) => {
   if (req.session.user) {
-    res.send(`Welcome to the party ${req.session.user.username}.`)
+    res.send(`Welcome to the owner area ${req.session.user.username}.`)
   } else {
     res.send('Sorry, no guests allowed.')
   }
 })
 
 app.use('/auth', authController)
-app.use('/listings', isSignedIn, listingsController)
+app.use('/restaurants', isSignedIn, restaurantsController)
 
 app.listen(port, () => {
   console.log(`The express app is ready on port ${port}!`)

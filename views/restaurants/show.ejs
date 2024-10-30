@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= restaurant.name %></title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <%- include('../partials/_navbar.ejs') %>
+
+    <!-- Restaurant Details -->
+    <h1>A Restaurant in <%= restaurant.address %></h1>
+    
+    <h2>Restaurants Details</h2>
+    <p>Address: <%= restaurant.address %></p>
+    <p>Email: <%= restaurant.email %></p>
+    <p>Name: <%= restaurant.name %></p>
+
+    <!-- Owner Section -->
+    <h2>Owner</h2>
+    <% if (restaurant.owner._id.equals(user._id)) { %>
+      <p>You own this!</p>
+      <a href="/restaurants/<%= restaurant._id %>/edit">Edit this restaurant</a>
+      <form action="/restaurants/<%= restaurant._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete this restaurant</button>
+      </form>
+    <% } else { %>
+      <p>You don't own this, <%= restaurant.owner.username %> does!</p>
+    <% } %>
+
+    <!-- Favorites Section -->
+    
+  </body>
+</html>

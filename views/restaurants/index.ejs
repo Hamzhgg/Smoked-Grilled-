@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
-    <title>All Listings</title>
+    <title>All Restaurants</title>
   </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <div class="index-header">
-    <h1>Here's all the Listings</h1>
-    <a href="/listings/new">Add a New Listing</a>
+    <h1>Here's all the Restaurants</h1>
+    <a href="/restaurants/new">Add a New Restaurant</a>
   </div>
     <div class="card-container">
-      <% listings.forEach((listing) => { %>
+      <% restaurants.forEach((restaurant) => { %>
         <h4>
-        A listing in <%= listing.city %> owned by <%= listing.owner.username %>.
+        A restaurant in <%= restaurant.address %> owned by <%= restaurant.owner.username %>.
       </h4>
-        <a href="/listings/<%= listing._id %>">View more details.</a>
+        <a href="/restaurants/<%= restaurant._id %>">View more details.</a>
       <% }) %>
     </div>
   </body>

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sixtyfour+Convergence&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    width: 150vw;
+    background-color: #f9f7f0;
+}
+
+.landing-header {
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 20px 35px;
+  }
+
+  .restaurant-icon {
+    background-image: url('https://media.istockphoto.com/id/637145496/photo/bbq-beef-rosemary-skewers.jpg?s=612x612&w=is&k=20&c=SKYDQ8wQTbLb4JPDWkkm8Le-JEA3VNvUFljZyxMHHdQ=');
+    width: 1.4em;
+    height: 1.4em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 25px;
+    padding-left: 5px;
+  }
+
+  .landing-image {
+    background-image: url('https://www.google.com/imgres?q=steak%20wallpaper%20&imgurl=https%3A%2F%2Farteflame.com%2Fcdn%2Fshop%2Farticles%2Fribeye_steak.webp%3Fv%3D1723652561&imgrefurl=https%3A%2F%2Farteflame.com%2Fblogs%2Frecipes%2Fmaster-grilling-a-ribeye-steak-on-the-arteflame-grill-ultimate-guide&docid=RtjJuTH20MpvXM&tbnid=WLddMY2eAA6JFM&vet=12ahUKEwjvlOu_nrSJAxUxSvEDHZd1BKAQM3oECF4QAA..i&w=1792&h=1024&hcb=2&ved=2ahUKEwjvlOu_nrSJAxUxSvEDHZd1BKAQM3oECF4QAA');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 0 -8px;
+  }
+
+  .auth-links > a {
+    color: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .auth-links > a:first-child {
+    background-color: #274c9c;
+  }
+  
+  
