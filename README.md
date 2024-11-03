@@ -17,6 +17,7 @@ This project aims to help users find unique dining experiences for smoked and gr
 
 # Technologies Used
 This app was coded using HTML, CSS and Javascript.
+ MEN Stack (MongoDB, Express.js, Node.js)
 
 # Next Steps
 List future improvements:
